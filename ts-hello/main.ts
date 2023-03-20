@@ -42,9 +42,10 @@ let log = function (message: string) {
 
 let doLog = (message: string) => console.log(message);
 
-interface Point {
-  x: number;
-  y: number;
+class Point {
+  x!: number;
+  y!: number;
+  draw!: () => void;
 }
 
 let drawPoint = (point: Point) => {
